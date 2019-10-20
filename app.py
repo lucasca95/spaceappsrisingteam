@@ -13,11 +13,7 @@ def index():
         if(f_pantalla == 'index'):
             return render_template('pantalla1.html')
         if(f_pantalla == 'pantalla1'):
-            return redirect('/p1')
-
-@app.route('/p1', methods=['GET', 'POST'])
-def pantalla1():
-    return render_template('pantalla2.html')
+            return redirect('/#')
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5555)
