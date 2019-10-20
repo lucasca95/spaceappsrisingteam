@@ -1,0 +1,45 @@
+<html>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="chat">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<form id="formulario">
+						<input type="text" name="mensaje" id="enviado">
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var formulario = document.getElementById("formulario")
+		formulario.onSubmit = (e) => {
+			e.preventDefault();
+			e.stopPropagation();
+			var mensaje = document.createElement("div")
+			mensaje.innerText = document.getElementById("enviado").value
+			document.getElementbyId("chat").appendChild(mensaje)
+		}
+
+		function logSubmit(event) {
+  log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
+  event.preventDefault();
+  var enviado = document.getElementById("enviado")
+  var m = document.createElement('span')
+  m.innerHtml = "> " + enviado.value
+  document.getElementById("asd").appendChild(m)
+  debugger
+}
+
+const form = document.getElementById('form');
+const log = document.getElementById('log');
+form.addEventListener('submit', logSubmit);
+	</script>
+</html>
+
