@@ -1,4 +1,4 @@
-# spaceappsrisingteam
+# RisingTeam
 Solución del equipo RisingTeam para la consigna "Rising water"
 
 Miembros del equipo:
