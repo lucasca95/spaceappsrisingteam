@@ -16,7 +16,7 @@ def index():
             return redirect('/p1')
 
 @app.route('/p1', methods=['GET', 'POST'])
-def pantalla1:
+def pantalla1():
     return render_template('pantalla2.html')
 
 if __name__ == "__main__":
